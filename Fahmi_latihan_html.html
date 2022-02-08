@@ -4,20 +4,80 @@
     <title>Muhamad Fahmi</title>
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
   </head>
+
+  <style>
+    body {
+      background-color: rgb(63, 171, 185);
+      color: white;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .title {
+      background-color: white;
+      border-radius: 0.25em;
+      width: 290px;
+      height: auto;
+      font-size: 36px;
+      padding: 8px;
+      color: black;
+      text-align: left;
+    }
+
+    #photoprofil {
+      margin: auto;
+      width: 140px;
+      border-radius: 20px;
+    }
+
+    .address {
+      text-align: left;
+      margin-left: 40px;
+    }
+
+    #heading {
+      font-weight: bold;
+      font-size: 22px;
+      color: white;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+      margin-left: 30px;
+    }
+
+    
+    th {
+      border: 3px solid #ffffff85;
+      background-color: grey;
+    }
+
+    table {
+      text-align: center;
+      margin: 20px auto;
+    }
+
+    td {
+      border: 2px solid #ffffff4b;
+      width: 300px;
+    }
+
+    
+  </style>
+
   <body>
-    <h1>Muhamad Fahmi</h1>
+    <h1 class="title">Muhamad Fahmi</h1>
     <!-- section address-->
-    <section>
-      <p>
-        <img src="fotopribadi.jpg" alt="foto pribadi" width="100" /> <br />
+    <section class="address">
+        <img id="photoprofil" src="fotopribadi.jpg" alt="foto pribadi" width="100" /> <br />
         Motoyama, Kyoto <br />
-        bobhorseman100@gmail.com
-      </p>
+        bobhorseman100@gmail.com <br/>
+        <a href="https://jp.linkedin.com/in/muhamad-fahmi-287557126">LinkedIn link</a> 
     </section>
 
     <!-- section personnal profil-->
     <section>
-      <h3>Personal profil</h3>
+      <h3 id="heading">Personal profil</h3>
       <p>
         I am a researcher at Research Institute for Humanity and Nature. <br />
         I love coding, and currently I am trying to learn fullstack engineering.
@@ -26,7 +86,7 @@
 
     <!-- section education-->
     <section>
-      <h3>Education</h3>
+      <h3 id="heading">Education</h3>
       <ul>
         <li>Bioinformatics, Ritsumeikan University</li>
         <li>Biology, Brawijaya University</li>
@@ -35,7 +95,7 @@
 
     <!-- section experience-->
     <section>
-      <h3>Experience</h3>
+      <h3 id="heading">Experience</h3>
       <ul>
         <li>Intern, BITS Tokyo</li>
         <li>Senior researcher, Ritsumeikan University</li>
@@ -45,7 +105,7 @@
 
     <!-- section additional skills-->
     <section>
-      <h3>Additional skills</h3>
+      <h3 id="heading">Additional skills</h3>
       <ul>
         <li>Ruby</li>
         <li>Python</li>
@@ -58,7 +118,7 @@
 
     <!-- section interest-->
     <section>
-      <h3>Interest</h3>
+      <h3 id="heading">Interest</h3>
       <ul>
         <li>Coding</li>
         <li>Gaming</li>
@@ -68,23 +128,29 @@
 
     <!-- section Organization-->
     <section>
-      <h3>Organization</h3>
-      <table border=1>
-        <tr>
-          <th>Organization</th>
-          <th>Position</th>
-          <th>Year</th>
-        </tr>
-        <tr>
-          <td>Himabio UB</td>
-          <td>Chief</td>
-          <td>2014</td>
-        </tr>
-        <tr>
-          <td>HMI MIPA UB</td>
-          <td>Member</td>
-          <td>2013</td>
-        </tr>
+      <h3 id="heading">Organization</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Organization</th>
+            <th>Position</th>
+            <th>Year</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Himabio UB</td>
+            <td>Chief</td>
+            <td>2014</td>
+          </tr>
+          <tr>
+            <td>HMI MIPA UB</td>
+            <td>Member</td>
+            <td>2013</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
+
   </body>
 </html>
